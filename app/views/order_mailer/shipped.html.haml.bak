@@ -1,0 +1,13 @@
+%p Your photos have been posted! Depending on your location, your photos may take between 1 to 5 days to be delivered.
+
+%p
+  If you haven't already connected with us on
+  = link_to "Facebook", "https://www.facebook.com/pages/Pocket-Prints/244847619027735"
+  or 
+  = link_to "Instagram", "http://instagram.com/pocketprintsapp"
+  , join us now to see what specials, new products and what other Pocket Printers are doing with their prints.
+
+%br
+
+%p All the best,
+%p From the Pocket Prints Team.

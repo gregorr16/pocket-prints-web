@@ -1,0 +1,11 @@
+- default_currency_format = {precision: 2, :strip_insignificant_zeros => true, separator: '.', delimiter: ','}
+%p 
+  Order 
+  = link_to @order.id, RailsAdmin::Engine.routes.url_helpers.show_url(:model_name => "order", :id => @order.id, :host => "pocketprints.com.au")
+  , has a paypal/stripe total of
+  = number_to_currency(@paypal_total, default_currency_format)
+  , an App total of
+  = number_to_currency(@app_total, default_currency_format) 
+  and a server total of
+  = number_to_currency(@server_total, default_currency_format)
+  = "."

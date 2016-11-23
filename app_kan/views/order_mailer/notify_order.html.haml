@@ -1,0 +1,22 @@
+%p The Order has been created:
+
+%ul
+  - [:paypal_transaction_token, :total, :name, :email, :phone, :address, :suburb, :state, :postcode].each do |field|
+    %li 
+      %strong #{field.to_s.titleize}:
+      %span #{field == :total ? number_to_currency(@order.send(field), {precision: 2, :strip_insignificant_zeros => true, separator: '.', delimiter: ','}) : @order.send(field)}
+
+  %li 
+    %strong Created At:
+    %span #{@order.created_at.try(:strftime, "%A %B %d, %Y")}
+
+  %br
+  
+  %li 
+    %strong Products:
+
+    %ul
+      - @order.order_items.each do |o_i|
+        %li 
+          %strong #{o_i.product.try(:type)} Quantity:
+          %span #{o_i.quantity}

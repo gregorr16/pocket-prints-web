@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<title>layout2-inline.html-inline</title>
+<link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
+<style type="text/css">
+/*
+*Project:	BELEGA Responsive Email Template
+*Version:	1.0
+*Creat:		21/11/13 
+*Author: 	digith 
+*Website: 	http://themeforest.net/user/digith
+*/
+
+/* Client-specific Styles */
+  #outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+  .yshortcuts, .yshortcuts a, .yshortcuts a:link, .yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { text-decoration: none !important; border-bottom: none !important; background: none !important; }
+
+/* Reset styles */
+  body { width: 100% !important; margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0; }
+
+/*link style*/
+  a:hover,.list a:hover { color: #97969E !important; text-decoration:underline !important; }
+
+/*background*/
+  body { background-color: #dddddd; }
+
+@media only screen and (max-width: 599px) {
+	table[class~=row]{width:420px !important;}
+	td[class~=tdL], td[class~=tdM], td[class~=tdR], td[class~=td3R]{padding:0 !important;}
+	img[class~=img]{width:100% !important;max-width:100% !important;height:auto !important;}
+	img[class~=img_100]{width:100px !important;max-width:100px !important;height:auto !important;}
+	img[class~=img_150]{width:150px !important;max-width:150px !important;height:auto !important;}
+	img[class~=img_120]{width:120px !important;max-width:120px !important;height:auto !important;}
+	table[class~=img_120]{width:120px !important;max-width:120px !important;}
+	table[class~=img_120] td{height:120px !important;max-width:120px !important;}
+	img[class~=icon_64]{ height:64px !important;width:auto !important;max-height:64px !important;}
+	img[class~=small-social]{ height:33px !important;width:33px !important;max-width:33px !important;}
+	img[class~=divider]{width:100% !important;max-width:100% !important;height:28px !important;}
+	img[class~=bottom-divider]{width:100% !important;max-width:100% !important;height:10px !important;}
+	table[class~=lP], table[class~=rP], td[class~=lP], td[class~=rP], img[class~=lP], img[class~=rP]{ 
+	  -moz-border-radius: 6px  !important;
+	  border-radius: 6px !important;
+	}
+	table[class~=maincontent] .tdL{padding:0 !important;}
+	table[class~=maincontent]{width:100% !important;}
+	table[class~=sidebar] .tdR{padding:0 !important;}
+	table[class~=sidebar]{width:100% !important;}
+	td[class~=zt]{height:10px !important;}
+	table[class~=img-rounded-right] td { padding: 0 0 10px 25px !important; }
+	table[class~=img-rounded] td { padding: 0 25px 10px 0 !important; }table[class~=img-rounded] .clear-padding { padding: 0 !important; }
+	table[class~=col2L]{ width:100% !important;}
+	table[class~=col2R]{ width:100% !important;}
+	table[class~=col3L]{ width:100% !important;}
+	table[class~=col3M]{ width:100% !important;}
+	table[class~=col3R]{ width:100% !important;}
+	table[class~=zoom-in]{float:none !important;width:80% !important;margin:0 auto !important;}
+	td[class~=header],td[class~=bottom]{padding:0 25px !important;}
+	td[class~=normal-L-td]{padding:25px !important;}
+	td[class~=normal-R-td]{padding:25px !important;}
+	td[class~=space]{display:none !important;}
+	td[class~=footer-td]{text-align:center !important;}
+	table[class~=footer-left],table[class~=footer-right]{width:100% !important;}
+	table[class~=footer-left] td,table[class~=footer-right] td{text-align:center !important;}
+}
+@media only screen and (max-width: 419px) {
+	table[class~=row]{width:100% !important; max-width:100% !important;}
+	table[class~=zoom-in]{width:100% !important;}
+	td[class~=header],td[class~=bottom]{text-align:center !important;padding:10px 10px !important;height:10px !important;}
+	td[class~=header] table,td[class~=bottom] table{float:none !important;margin:0 auto !important;}
+	td[class~=header] table td{padding:5px 0 10px !important; height:10px !important;}
+	td[class~=bottom] table td{padding:25px 0 10px !important; height:10px !important;}
+	td[class~=header] table[class~=logo] td{padding:25px 0 10px !important;}
+	td[class~=bottom] table[class~=logo] td{padding:10px 0 5px !important;}
+	img[class~=img_150]{width:120px !important;max-width:120px !important;height:auto !important;}
+	table[class~=img_150]{width:120px !important;max-width:120px !important;}
+	table[class~=img_150] td{height:120px !important;}
+	table[class~=img-rounded-right] td { padding: 0 0 5px 20px !important; }
+	table[class~=img-rounded] td { padding: 0 20px 5px 0 !important; }
+}
+@media only screen and (max-width: 360px) {
+	table[class~=top-bar] span{display:none !important;}
+	img[class~=img_120]{width:100px !important;max-width:100px !important;height:auto !important;}
+	table[class~=img_120]{width:100px !important;max-width:100px !important;}
+	table[class~=img_120] td{height:100px !important;max-width:100px !important;}
+	img[class~=img_150]{width:80px !important;max-width:80px !important;height:auto !important;}
+	table[class~=img_150]{width:100px !important;max-width:100px !important;}
+	table[class~=img_150] td{height:100px !important;}
+	img[class~=img_100]{width:80px !important;max-width:80px !important;height:auto !important;}
+}
+</style>
+</head>
+<body style="margin:0;padding:0;width:100%;height:100%;">
+<!---->
+
+
+
+
+
+<div class="preheader" style="display:none; visibility:hidden; height:0px; font-size:0px; line-height:0px;"></div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="BGtable" style="border-collapse: collapse;margin: 0;padding: 0;background-color: #dddddd;height: 100%;width: 100%;">
+  <tbody><tr>
+    <td valign="top" class="BGtable-inner" style="padding: 10px;">
+    
+    <!-- start - ◆header-social-icons◆ -->
+      <%= render :partial => "layouts/header" %>
+    <!-- end - ◆header-social-icons◆ -->
+
+    <!-- start ◆full-img-with-text◆ -->
+      <table width="600" border="0" align="center" cellpadding="0" cellspacing="0" class="row fg rounded-corner" style="border-collapse: collapse;background-color: #ffffff;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;width: 600px;">
+        <tbody><tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+            <tbody><tr>
+              <td>
+                <%= image_tag "main_img@2x.png", alt: "image", width:"600", height:"200", class:"tP img", style:"border: 0;display: block;-ms-interpolation-mode: bicubic;width: 600px;max-width: 600px;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;" %>
+              </td>
+            </tr>
+          </tbody></table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+              <tbody><tr>
+                <td class="content normal-td" style="font-family: Questrial, 'Helvetica Neue',Helvetica,arial;font-size: 13px;line-height: 20px;font-weight: 400;color: #555555;padding: 20px 25px;">
+                  <div style ="font-family: Questrial, 'Helvetica Neue',Helvetica,Arial;color: #322f2f;font-weight: 400;font-size: 18px;line-height: 20px;margin-top: 0;margin-right: 0;margin-bottom: 6px;margin-left: 0;">
+                    <%= yield %>
+                  </div>
+                </td>
+              </tr>
+          </tbody></table></td>
+        </tr>
+      </tbody></table>
+      <table width="600" border="0" align="center" cellpadding="0" cellspacing="0" class="row" style="border-collapse: collapse;width: 600px;">
+        <tbody><tr>
+          <td height="28">
+            <%= image_tag "divider.png", width:"600", height:"28", class:"divider", style:"border: 0;display: block;-ms-interpolation-mode: bicubic; height: 28px;"%>
+          </td>
+        </tr>
+      </tbody></table>
+<!-- end - ◆full-img-with-text◆ -->
+
+<!-- start ◆footer-style2◆ -->
+      <%= render :partial => "layouts/footer" %>
+<!-- end - ◆footer-style2◆ -->
+</td>
+  </tr>
+</tbody></table>
+
+
+
+</body>
+</html>

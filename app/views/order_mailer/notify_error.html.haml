@@ -1,0 +1,7 @@
+%p There is an Error occurs when creating Order:
+
+= link_to "Order #{@order.id}", RailsAdmin::Engine.routes.url_helpers.show_url(:model_name => "order", :id => @order.id, :host => "pp.appiphany.com.au")
+
+%p Error message: #{@error}
+%p Parameters:
+%p #{@params}

@@ -1,0 +1,8 @@
+development:
+  amazon_access_key: AKIAJNPMHPGTPBGRP5FQ
+  amazon_secret: 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
+  bucket: pocketprint-development
+production:
+  amazon_access_key: AKIAJNPMHPGTPBGRP5FQ
+  amazon_secret: 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
+  bucket: pocketprint-production

@@ -1,0 +1,7 @@
+%p There is an Error occurs when uploading Photo:
+
+= link_to "Photo #{@photo.id}", RailsAdmin::Engine.routes.url_helpers.show_url(:model_name => "photo", :id => @photo.id, :host => "pp.appiphany.com.au")
+
+%p Error message: #{@error}
+%p Parameters:
+%p #{@params}

@@ -1,0 +1,13 @@
+%p Hooray!
+%p Your order for a #{number_to_currency @voucher.purchase_price, strip_insignificant_zeros: true} Voucher has been received and will be emailed shortly to :
+
+%p  #{@voucher.email_address}
+
+%p with this message:
+
+%p #{@voucher.message}
+
+%p Please feel free to respond to this email, if you have any questions.
+
+%br
+%p From the Pocket Prints Team.

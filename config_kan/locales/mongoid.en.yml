@@ -1,0 +1,51 @@
+en:
+  mongoid:
+    models:
+      customer: Customer
+      order: Order
+      order_item: Order Item
+      product: Product
+      photo: Photo
+      product_photo: Product Photo
+      user: User
+      coupon: Coupon
+      voucher: Voucher
+
+    attributes: &model_attribute_tranlations
+      customer:
+        token: Token
+      
+      order:
+        paypal_transaction_token: Paypal Transaction Token
+        shipping_cost: Shipping Cost
+        voucher_email: Voucher Email
+        coupon_discount: Coupon Discount
+        created_at: Created At
+        order_code: Code
+        updated_at: Updated At
+
+      order_item:
+        recipient_name: Recipient Name
+        recipient_email: Recipient Email
+        gift_message: Gift Message
+        gift_value: Gift Value
+        quantity_set: Quantity Set
+      
+      product:
+        requires_photo: Requires Photo
+        main_image: Main Image
+
+      photo:
+        photo_info: Photo Info
+
+      coupon:
+        free_shipping: Free Shipping
+        discount_percentage: Discount Percentage
+        discount_amount: Discount Amount
+        discount_on_product: Discount on Product
+
+      voucher:
+        purchase_price: Purchase Price
+        email_address: Email Address
+        is_used: Is Used
+        recipient_name: Recipient Name

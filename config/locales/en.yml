@@ -1,0 +1,70 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  admin:
+    actions:
+      shipped:
+        menu: Shipped
+        breadcrumb: Shipped
+        done: Shipped
+        title: Shipped
+
+      download:
+        menu: Download
+        breadcrumb: Download
+        done: Downloaded
+        title: Download
+
+      address:
+        menu: Address
+        breadcrumb: Address
+        done: Address
+        title: Address
+        
+  discount:
+    can_not_found: "Coupon or Voucher Code can not be found"
+    expired: "Coupon || Voucher has expired"
+    have_been_used: "Coupon || Voucher has already been used"
+    not_apply: "This discount does not apply to your order"
+    in_valid: "Coupon || Voucher is invalid"
+    two_coupons_not_allow: "Can not use more than one coupon at the same time"
+    duplicated_vouchers: "Can not use duplicated vouchers."
+  customer:
+    null_or_invalid_token: "Please provide a valid token."
+  product:
+    out_of_date: "Products are out of date."
+    not_visible: "Products is not visible."
+    can_not_found: "Product can not be found."
+    id_can_not_found: "Product with id = '%{id}' can not be found."
+    in_valid: "Products are in-valid."
+  photo:
+    id_can_not_found: "Photo with id = '%{id}' can not be found."
+    invalid_url: "Invalid Image Url."
+    missing_image: "Image is missing."
+  order:
+    valid: "Valid"
+    stripe_token_blank: "Stripe Token can not be blank"
+  voucher:
+    has_been_used: "Voucher %{code} has already been used"
+    email_invalid: Voucher Email is invalid.
+    gift_value_invalid: Gift Value is invalid.

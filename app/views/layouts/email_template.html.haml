@@ -1,0 +1,203 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+      %meta{:content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;", :name => "viewport"}
+        %title layout2-inline.html-inline
+        %link{:href => "http://fonts.googleapis.com/css?family=Questrial", :rel => "stylesheet", :type => "text/css"}
+          :css
+            /*
+            *Project:	BELEGA Responsive Email Template
+            *Version:	1.0
+            *Creat:		21/11/13 
+            *Author: 	digith 
+            *Website: 	http://themeforest.net/user/digith
+            */
+            
+            /* Client-specific Styles */
+              #outlook a { padding: 0; }
+              .ReadMsgBody { width: 100%; }
+              .ExternalClass { width: 100%; }
+              body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+              .yshortcuts, .yshortcuts a, .yshortcuts a:link, .yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { text-decoration: none !important; border-bottom: none !important; background: none !important; }
+            
+            /* Reset styles */
+              body { width: 100% !important; margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0; }
+            
+            /*link style*/
+              a:hover,.list a:hover { color: #97969E !important; text-decoration:underline !important; }
+            
+            /*background*/
+              body { background-color: #dddddd; }
+
+              td img, td a img {
+                height: auto !important;
+                width: auto !important;
+                max-height: 100% !important;
+                max-width: 100% !important;
+              }
+            
+            @media only screen and (max-width: 599px) {
+            	table[class~=row]{width:100% !important;}
+            	td[class~=tdL], td[class~=tdM], td[class~=tdR], td[class~=td3R]{padding:0 !important;}
+            	img[class~=img]{width:100% !important;max-width:100% !important;height:auto !important;}
+            	img[class~=img_100]{width:100px !important;max-width:100px !important;height:auto !important;}
+            	img[class~=img_150]{width:150px !important;max-width:150px !important;height:auto !important;}
+            	img[class~=img_120]{width:120px !important;max-width:120px !important;height:auto !important;}
+            	table[class~=img_120]{width:120px !important;max-width:120px !important;}
+            	table[class~=img_120] td{height:120px !important;max-width:120px !important;}
+            	img[class~=icon_64]{ height:64px !important;width:auto !important;max-height:64px !important;}
+            	img[class~=small-social]{ height:33px !important;width:33px !important;max-width:33px !important;}
+            	img[class~=divider]{width:100% !important;max-width:100% !important;height:28px !important;}
+            	img[class~=bottom-divider]{width:100% !important;max-width:100% !important;height:10px !important;}
+            	table[class~=lP], table[class~=rP], td[class~=lP], td[class~=rP], img[class~=lP], img[class~=rP]{ 
+            	  -moz-border-radius: 6px  !important;
+            	  border-radius: 6px !important;
+            	}
+            	table[class~=maincontent] .tdL{padding:0 !important;}
+            	table[class~=maincontent]{width:100% !important;}
+            	table[class~=sidebar] .tdR{padding:0 !important;}
+            	table[class~=sidebar]{width:100% !important;}
+            	td[class~=zt]{height:10px !important;}
+            	table[class~=img-rounded-right] td { padding: 0 0 10px 25px !important; }
+            	table[class~=img-rounded] td { padding: 0 25px 10px 0 !important; }table[class~=img-rounded] .clear-padding { padding: 0 !important; }
+            	table[class~=col2L]{ width:100% !important;}
+            	table[class~=col2R]{ width:100% !important;}
+            	table[class~=col3L]{ width:100% !important;}
+            	table[class~=col3M]{ width:100% !important;}
+            	table[class~=col3R]{ width:100% !important;}
+            	table[class~=zoom-in]{float:none !important;width:80% !important;margin:0 auto !important;}
+            	td[class~=header],td[class~=bottom]{padding:0 25px !important;}
+            	td[class~=normal-L-td]{padding:25px !important;}
+            	td[class~=normal-R-td]{padding:25px !important;}
+            	td[class~=space]{display:none !important;}
+            	td[class~=footer-td]{text-align:center !important;}
+            	table[class~=footer-left],table[class~=footer-right]{width:100% !important;}
+            	table[class~=footer-left] td,table[class~=footer-right] td{text-align:center !important;}
+            }
+            @media only screen and (max-width: 419px) {
+            	table[class~=row]{width:100% !important; max-width:100% !important;}
+            	table[class~=zoom-in]{width:100% !important;}
+            	td[class~=header],td[class~=bottom]{text-align:center !important;padding:10px 10px !important;height:10px !important;}
+            	td[class~=header] table,td[class~=bottom] table{float:none !important;margin:0 auto !important;}
+            	td[class~=header] table td{padding:5px 0 10px !important; height:10px !important;}
+            	td[class~=bottom] table td{padding:25px 0 10px !important; height:10px !important;}
+            	td[class~=header] table[class~=logo] td{padding:25px 0 10px !important;}
+            	td[class~=bottom] table[class~=logo] td{padding:10px 0 5px !important;}
+            	img[class~=img_150]{width:120px !important;max-width:120px !important;height:auto !important;}
+            	table[class~=img_150]{width:120px !important;max-width:120px !important;}
+            	table[class~=img_150] td{height:120px !important;}
+            	table[class~=img-rounded-right] td { padding: 0 0 5px 20px !important; }
+            	table[class~=img-rounded] td { padding: 0 20px 5px 0 !important; }
+            }
+            @media only screen and (max-width: 360px) {
+            	table[class~=top-bar] span{display:none !important;}
+            	img[class~=img_120]{width:100px !important;max-width:100px !important;height:auto !important;}
+            	table[class~=img_120]{width:100px !important;max-width:100px !important;}
+            	table[class~=img_120] td{height:100px !important;max-width:100px !important;}
+            	img[class~=img_150]{width:80px !important;max-width:80px !important;height:auto !important;}
+            	table[class~=img_150]{width:100px !important;max-width:100px !important;}
+            	table[class~=img_150] td{height:100px !important;}
+            	img[class~=img_100]{width:80px !important;max-width:80px !important;height:auto !important;}
+            }
+  %body{:style => "margin:0;padding:0;width:100%;height:100%;"}
+    / 
+    .preheader{:style => "display:none; visibility:hidden; height:0px; font-size:0px; line-height:0px;"}
+    %table.BGtable{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;margin: 0;padding: 0;background-color: #dddddd;height: 100%;width: 100%;", :width => "100%"}
+      %tbody
+        %tr
+          %td.BGtable-inner{:style => "padding: 10px;", :valign => "top"}
+            / start ◆top-sec◆
+            %table.row.top-bar{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;width: 100%;", :width => ""}
+              %tbody
+                %tr
+            / end - ◆top-sec◆
+            / start ◆header-social-icons◆
+            %table.row.fg.rounded-corner{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;background-color: #ffffff;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;width: 100%;"}
+              %tbody
+                %tr
+                  %td.header{:height => "", :style => "padding: 10px 30px;"}
+                    %table.logo{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;border: none;mso-table-lspace: 0pt;mso-table-rspace: 0pt; width: 100%;"}
+                      %tbody
+                        %tr
+                          %td
+                            %a{:href => "http://www.pocketprints.com.au/", :style => "color: #e05b5b;text-decoration: none;outline: none;"}
+                              = image_tag "app_icon@2x.png", :alt => "logo", :height => "85", :style => "border: 0;display: block;-ms-interpolation-mode: bicubic;height: auto !important; width: auto !important; max-height: 100% !important; max-width: 100% !important;", :width => "366"
+                          %td
+                            %a{:href => "http://www.pocketprints.com.au/", :style => "color: #e05b5b;text-decoration: none;outline: none;"}
+                              = image_tag "logo_new@2x.png", :alt => "logo", :height => "85", :style => "border: 0;display: block;-ms-interpolation-mode: bicubic;height: auto !important; width: auto !important; max-height: 100% !important; max-width: 100% !important;", :width => "366"
+
+                          %td.content{ :style => "font-family: Questrial, 'Helvetica Neue',Helvetica,arial;font-size: 13px;line-height: 20px;font-weight: 400;color: #555555;"}
+                            %div{:style=> "max-width: 30%; float: right; margin-left: 2%;"}
+                              %a{:href => "http://www.pinterest.com/pocketprintsapp", :style => "color: #e05b5b;text-decoration: none;outline: none;"}
+                                = image_tag "pinterest_icon@2x.png", :class => "img-inline social_icon", :alt => "social icon", :height => "64", :style => "border: 0;display: inline;-ms-interpolation-mode: bicubic;vertical-align: -3px;width: 66px;height: 64px;max-width: 66px;height: auto !important; width: auto !important; max-height: 100% !important; max-width: 100% !important;", :width => "66"
+
+                            %div{:style=> "max-width: 30%; float: right; margin-left: 2%;"}
+                              %a{:href => "http://instagram.com/pocketprintsapp", :style => "color: #e05b5b;text-decoration: none;outline: none;"}
+                                = image_tag "instagram_icon@2x.png", :class => "img-inline social_icon", :alt => "social icon", :height => "64", :style => "border: 0;display: inline;-ms-interpolation-mode: bicubic;vertical-align: -3px;width: 66px;height: 64px;max-width: 66px;height: auto !important; width: auto !important; max-height: 100% !important; max-width: 100% !important;", :width => "66"
+
+                            %div{:style=> "max-width: 30%; float: right; margin-left: 2%;"}
+                              %a{:href => "https://www.facebook.com/pages/Pocket-Prints/244847619027735", :style => "color: #e05b5b;text-decoration: none;outline: none;"}
+                                = image_tag "fb_icon@2x.png", :class => "img-inline social_icon", :alt => "social icon", :height => "64", :style => "border: 0;display: inline;-ms-interpolation-mode: bicubic;vertical-align: -3px;width: 65px;height: 64px;max-width: 65px;height: auto !important; width: auto !important; max-height: 100% !important; max-width: 100% !important;", :width => "65"
+                        
+                            
+            %table.row{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;width: 100%;", :width => ""}
+              %tbody
+                %tr
+                  %td{:height => "28"}
+                    = image_tag "divider.png", :class => "divider", :style => "border: 0;display: block;-ms-interpolation-mode: bicubic; height: 28px;height: auto !important; width: 100% !important; max-height: 100% !important; max-width: 100% !important;", :width => "", :height => "28"
+            / end - ◆header-social-icons◆
+            / start ◆full-img-with-text◆
+            %table.row.fg.rounded-corner{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;background-color: #ffffff;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;width: 100%;", :width => ""}
+              %tbody
+                %tr
+                  %td
+                    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;", :width => "100%"}
+                      %tbody
+                        %tr
+                          %td
+                            = image_tag "main_img@2x.png", :class => "tP img", :alt => "image", :height => "400", :style => "border: 0;display: block;-ms-interpolation-mode: bicubic;width: 100%;max-width: 100%;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;height: auto !important; width: 100% !important; max-height: 100% !important; max-width: 100% !important;", :width => ""
+
+                    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;", :width => "100%"}
+                      %tbody
+                        %tr
+                          %td.content.normal-td{:style => "font-family: Questrial, 'Helvetica Neue',Helvetica,arial;font-size: 13px;line-height: 20px;font-weight: 400;color: #555555;padding: 20px 25px;"}
+                            %div{:style => "font-family: Questrial, 'Helvetica Neue',Helvetica,Arial;color: #322f2f;font-weight: 400;font-size: 18px;line-height: 20px;margin-top: 0;margin-right: 0;margin-bottom: 6px;margin-left: 0;"}
+
+                              = yield
+
+                            
+
+            %table.row{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;width: 100%;", :width => ""}
+              %tbody
+                %tr
+                  %td{:height => "28"}
+                    = image_tag "divider.png", :class => "divider", :style => "border: 0;display: block;-ms-interpolation-mode: bicubic; height: 28px;height: auto !important; width: 100% !important; max-height: 100% !important; max-width: 100% !important;", :width => "", :height => "28"
+            / end - ◆full-img-with-text◆
+            / start ◆circle-avator-text-no-button◆
+            
+            
+            %table.row{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;width: 100%;", :width => ""}
+              %tbody
+                %tr
+                  %td{:height => "28"}
+                    = image_tag "divider.png", :class => "divider", :style => "border: 0;display: block;-ms-interpolation-mode: bicubic; height: 28px;height: auto !important; width: 100% !important; max-height: 100% !important; max-width: 100% !important;", :width => "", :height => "28"
+            / end - ◆circle-avator-text-no-button◆
+            / start ◆footer-style2◆
+            %table.row.footer{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: collapse;width: 100%;", :width => ""}
+              %tbody
+                %tr
+                  %td.footer-td.content{:align => "center", :style => "font-family: Questrial, 'Helvetica Neue',Helvetica,arial;font-size: 12px;line-height: 18px;font-weight: 400;color: #444;padding: 0 0 10px;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;"}
+                    Copyright  2013
+                    = succeed "," do
+                      %a{:href => "http://www.pocketprints.com.au/", :style => "color: #111;text-decoration: none;outline: none;"} Pocket Prints Pty Ltd
+                    All rights reserved.
+                    %br{:style => "line-height: 20px;"}
+                      5 / 94 Elizabeth St. Melbourne, Victoria, Australia
+                      %br{:style => "line-height: 20px;"}
+                        %a{:href => "http://www.pocketprints.com.au/", :style => "color: #111;text-decoration: none;outline: none;"} Pocket Prints Website
+                        |
+                        %a{:href => "#", :style => "color: #111;text-decoration: none;outline: none;"} Download iPhone
+                        |
+                        %a{:href => "#", :style => "color: #111;text-decoration: none;outline: none;"} Download Android
+            / end - ◆footer-style2◆

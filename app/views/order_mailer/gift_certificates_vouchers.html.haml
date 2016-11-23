@@ -1,0 +1,18 @@
+%p Hi #{@voucher.recipient_name.to_s.split(" ")[0]},
+
+%p{style: "margin-left: 20px;"} Lucky you, this is your Pocket Prints Gift Certificate from #{@order.first_name}.
+
+%p #{@voucher.message}
+
+- gift_code_url = gift_url(code: @voucher.code, email_address: @voucher.email_address)
+%p 
+  To redeem this gift certificate, use the Pocket Prints App, select your photos and products, create an order and enter your gift certificate details. Your Gift Certificate code is #{link_to @voucher.code, gift_code_url}, and the email address for the code is #{@voucher.email_address}. It is recommended that you print out this email for your records.
+
+%p This gift certificate expires on #{@voucher.expiry.strftime("%A %B %d, %Y")}.
+
+%p 
+  If you don't already have the Pocket Prints App - you can download it
+  = link_to "here", "#"
+  for iPhone, and
+  = link_to "here", "#"
+  for Android.
