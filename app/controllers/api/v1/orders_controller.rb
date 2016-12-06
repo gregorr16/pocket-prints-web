@@ -20,7 +20,7 @@ module Api
           #   promotions: [
           #     {promotion_code, voucher_email}
           #   ], 
-          #   phone, address, suburb, state, postcode,
+          #   phone, company_name, address, suburb, state, postcode,
           #   products: [
           #     {id: "product_id", quantity: 1, image_id: "photo_id", frame: true, recipient_name, recipient_email, message, gift_value},
           #     {id: "product_id", quantity: 1, image_id: "photo_id", frame: false, recipient_name, recipient_email, message, gift_value}
@@ -40,7 +40,7 @@ module Api
       def create
         
         order_params = params.permit(:paypal_transaction_token, :total, :shipping_cost, :name,
-          :email, :voucher_email, :voucher_id, :coupon_id, :coupon_discount, :phone,
+          :email, :voucher_email, :voucher_id, :coupon_id, :coupon_discount, :phone, :company_name,
           :address, :suburb, :state, :postcode, :customer_id, :stripe_transaction_token)
 
         order_params[:params] = params.to_s

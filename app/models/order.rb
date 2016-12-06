@@ -19,6 +19,7 @@ class Order
   # field :coupon_id
   field :coupon_discount
   field :phone
+  field :company_name
   field :address, type: String
   field :suburb
   field :state
@@ -161,7 +162,7 @@ class Order
 
       xml.Customer({"FirstName" => "#{first_name}", "LastName" => "#{last_name}", "Phone1" => "#{phone}", "Phone2" => "", "Email" => "orders@pocketprints.com.au"})
       
-      xml.Address({"AddressLine1" => "#{address}", "AddressLine2" => "", "City" => "#{suburb}", "PostCode" => "#{postcode}", "State" => "#{state}", "Country" => "Australia"})
+      xml.Address({ "CompanyName" => "#{company_name}", "AddressLine1" => "#{address}", "AddressLine2" => "", "City" => "#{suburb}", "PostCode" => "#{postcode}", "State" => "#{state}", "Country" => "Australia"})
       
     end
 
@@ -428,7 +429,7 @@ class Order
 
   def full_address
     address_parts = []
-    [:name, :address, :suburb, :state, :postcode].each do |field|
+    [:name, :company_name, :address, :suburb, :state, :postcode].each do |field|
       address_parts << self[field] if self[field]
     end
 
