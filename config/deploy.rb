@@ -97,7 +97,7 @@ namespace :deploy do
       execute "rm #{current_path}/config/mongoid.yml && ln -s #{shared_path}/config/mongoid.yml #{current_path}/config/mongoid.yml"
       
       info "Create symlink for secrets.yml"
-      execute "rm #{current_path}/config/secrets.yml && ln -s #{shared_path}/config/mongoid.yml #{current_path}/config/secrets.yml"
+      execute "rm #{current_path}/config/secrets.yml && ln -s #{shared_path}/config/secrets.yml #{current_path}/config/secrets.yml"
 
       info "Create symlink for assets"
       execute "sudo ln -s #{shared_path}/assets #{current_path}/public/assets"
