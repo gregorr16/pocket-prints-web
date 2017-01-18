@@ -1,9 +1,9 @@
 %p The Order has been created:
 
 %ul
-  - [:paypal_transaction_token, :total, :name, :email, :phone, :company_name, :address, :suburb, :state, :postcode].each do |field|
+  - [:paypal_transaction_id, :total, :name, :email, :phone, :company_name, :address, :suburb, :state, :postcode].each do |field|
     %li 
-      %strong #{field.to_s.titleize}:
+      %strong #{field == :paypal_transaction_id ? "Paypal Transaction ID":field.to_s.titleize}:
       %span #{field == :total ? number_to_currency(@order.send(field), {precision: 2, :strip_insignificant_zeros => true, separator: '.', delimiter: ','}) : @order.send(field)}
 
   %li 
