@@ -15,7 +15,7 @@ class PhotoMailer < ActionMailer::Base
     if env == :live1
       email
     else
-      email_test = 'vuongtieulong02@gmail.com'
+      email_test = 'lienptb@elarion.com'
     end
   end
 
@@ -26,7 +26,7 @@ class PhotoMailer < ActionMailer::Base
   	@photo = photo
     @error = error
     @params = params
-    to = ["vuongtieulong02@gmail.com", "adrian@appiphany.com.au"]
+    to = ["lienptb@elarion.com", "adrian@appiphany.com.au"]
 
     mail :to => email_to(to), :subject => "[Pocket Prints] Error when uploading Photo"
   end

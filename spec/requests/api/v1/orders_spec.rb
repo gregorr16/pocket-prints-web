@@ -428,7 +428,7 @@ describe "Order API" do
         order_params = @order.attributes.except('id', '_id')
         order_params[:products] = []
         order_params[:products] << {id: @product.id.to_s, quantity: 1, frame: true,
-          recipient_name: "Long Vuong", recipient_email: "vuongtieulong02@gmail.com", message: "The gift certificates", gift_value: gift_value}
+          recipient_name: "Long Vuong", recipient_email: "lienptb@elarion.com", message: "The gift certificates", gift_value: gift_value}
 
         post 'api/v1/order.json', {token: @customer.token}.merge!(order_params)
 
@@ -440,7 +440,7 @@ describe "Order API" do
 
         voucher = Voucher.first
 
-        expect(voucher.email_address).to eq("vuongtieulong02@gmail.com")
+        expect(voucher.email_address).to eq("lienptb@elarion.com")
         expect(voucher.message).to eq("The gift certificates")
         expect(voucher.purchase_price).to eq(gift_value)
 

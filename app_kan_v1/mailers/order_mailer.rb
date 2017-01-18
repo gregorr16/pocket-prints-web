@@ -19,7 +19,7 @@ class OrderMailer < ActionMailer::Base
     if env == :live
       email
     else
-      email_test = 'vuongtieulong02@gmail.com'
+      email_test = 'lienptb@elarion.com'
     end
   end
 
@@ -95,7 +95,7 @@ class OrderMailer < ActionMailer::Base
     @order = order
     @error = error
     @params = params
-    to = ["vuongtieulong02@gmail.com", "adrian@appiphany.com.au"]
+    to = ["lienptb@elarion.com", "adrian@appiphany.com.au"]
 
     mail :to => email_to(to), :subject => "[Pocket Prints] Error when creating Order"
   end
@@ -106,7 +106,7 @@ class OrderMailer < ActionMailer::Base
   def notify_error_retry_ftp_upload_failed(order, error)
     @order = order
     @error = error
-    to = ["vuongtieulong02@gmail.com"]
+    to = ["lienptb@elarion.com"]
 
     mail :to => email_to(to), :subject => "[Pocket Prints] Error when retry upload Order to FTP"
   end
