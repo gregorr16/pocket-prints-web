@@ -38,7 +38,6 @@ module Api
       # @todo: Check the paypal transaction total with total ...
       ##
       def create
-        
         order_params = params.permit(:paypal_transaction_token, :total, :shipping_cost, :name,
           :email, :voucher_email, :voucher_id, :coupon_id, :coupon_discount, :phone, :company_name,
           :address, :suburb, :state, :postcode, :customer_id, :stripe_transaction_token)
@@ -374,7 +373,9 @@ module Api
               transactions = payment.transactions.first
               payment_amount = transactions.amount
               paypal_total = payment_amount.total.to_f
-
+              #detail at https://developer.paypal.com/docs/api/payments/
+              @order.paypal_transaction_id = payment.transactions.first.related_resources.first.sale.id
+              @order.save
               if @order.total != total || @order.total != paypal_total
                 OrderMailer.delay.potential_fraud_warning(@order, paypal_total, @order.total, total)
               end  

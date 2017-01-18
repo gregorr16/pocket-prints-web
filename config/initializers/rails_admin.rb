@@ -231,6 +231,9 @@ RailsAdmin.config do |config|
         sort_by :created_at
         [:order_code, :name, :email, :total, :status, :success, :created_at, :shipped_date, :note].each{|f| field f}
       end
+      show do
+        exclude_fields :paypal_transaction_token
+      end
     end
 
     config.model Customer do

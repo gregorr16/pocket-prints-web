@@ -16,6 +16,7 @@ en:
         token: Token
       
       order:
+        paypal_transaction_id: Paypal Transaction ID
         paypal_transaction_token: Paypal Transaction Token
         shipping_cost: Shipping Cost
         voucher_email: Voucher Email

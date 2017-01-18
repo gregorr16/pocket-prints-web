@@ -7,6 +7,7 @@ class Order
   include Mongoid::Document
   include Mongoid::Timestamps
 
+  field :paypal_transaction_id, type:String
   field :paypal_transaction_token, type: String
   field :stripe_transaction_token, type: String
 
