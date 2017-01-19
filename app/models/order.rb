@@ -147,7 +147,7 @@ class Order
       "custom" => "false", "customer" => "SCO800", "date" => "#{Time.now}", "delivery_type" => "Immediate",
       "enclosed_images" => "true", "is_canvas" => "false",  "is_metal" => "false", "large_print" => "false",
       "minorderfee" => "0.00", "mounting" => "false", "order" => "###", "order_ref" => "#{self.id}", "psd" => "false",
-      "save_to_cd" => "false", "save_to_dvd" => "false", "stretching" => "false", "type" => "output", "version" => "1.0", "photographer" => "Pocket Prints"}
+      "save_to_cd" => "false", "save_to_dvd" => "false", "stretching" => "false", "type" => "output", "version" => "1.0", "photographer" => "pocketprints.com.au"}
 
     xml.order(order_attrs) do 
       self.order_items.each_with_index do |o_i, index|
